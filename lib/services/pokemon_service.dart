@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 
 class PokemonService {
   Future<PokemonModel?> buscarPokemon(String nomePokemon) async {
-    final String url = 'https://pokeapi.co/api/v2/pokemon/';
+    final String url = 'https://pokeapi.co/api/v2/pokemon/$nomePokemon';
     final Uri uri = Uri.parse(url);
 
     try {

@@ -26,7 +26,7 @@ class PokemonModel {
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> pokemon = new Map<String, dynamic>();
 
-    pokemon['nome'] = nome;
+    pokemon['nome'] = nome.toString();
     pokemon['sprite'] = sprite;
     pokemon['tipos'] = tipo;
 
